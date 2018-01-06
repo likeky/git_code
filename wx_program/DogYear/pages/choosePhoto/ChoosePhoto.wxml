@@ -1,0 +1,13 @@
+<!--pages/choosePhoto/ChoosePhoto.wxml-->
+<!--<text>pages/choosePhoto/ChoosePhoto.wxml</text>-->
+
+<view class="container">
+  <view class='userinfo'>
+    <text>哈村地地地</text>
+    <image bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+     <!--<image class="userinfo-avatar" src="../../resource/dog1.jpg" background-size="cover"></image>-->
+     <text class="user-motto">{{motto}}</text>
+     <button bindtap='onGetMyPhoto'>选择照片</button>
+     <!--<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>-->
+  </view>
+</view>
