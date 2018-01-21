@@ -1,11 +1,8 @@
 {
-
-
   "pages": [
+    "pages/shop/shop",
     "pages/choosePhoto/ChoosePhoto",
     "pages/index/index",
-    
-
     "pages/logs/logs"
   ],
   "window": {

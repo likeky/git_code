@@ -1,0 +1,33 @@
+<!--pages/shop/shop.wxml-->
+
+<view>
+  <view class="page__hd">
+    <text class="page__title">label</text>
+    <text class="page__desc">标签</text>
+  </view>
+
+  <view class="widgets__list_show">
+  <navigator url="component-pages/wx-text/wx-text" class="widget">
+    <text class="widget__name">{{baseInfo.adress}}</text>
+    <image class="widget__arrow" src="/resource/arrow.png" background-size="cover" />
+    <view class="widget__line"></view>
+  </navigator>
+  <navigator url="component-pages/wx-icon/wx-icon" class="widget">
+    <text class="widget__name">{{baseInfo.openTime}}</text>
+    <view class="widget__line"></view>
+  </navigator>
+  <navigator url="component-pages/wx-mask/wx-mask" class="widget">
+    <text class="widget__name">{{baseInfo.tel}}</text>
+    <image class="widget__arrow" src="/resource/arrow.png" background-size="cover" />
+    <view class="widget__line"></view>
+  </navigator>
+  <navigator url="component-pages/wx-toast/wx-toast" class="widget">
+    <text class="widget__name">门店照片</text>
+    <view>
+        <image src="{{imgUrls}}"/>
+    </view>
+    <view class="widget__line"></view>
+  </navigator>
+
+  </view>
+</view>
