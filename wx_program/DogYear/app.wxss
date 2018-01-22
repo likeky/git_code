@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+.container-row {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 10rpx 10rpx;
+  box-sizing: border-box;
+}
+
 page {
   background-color: #fbf9fe;
   height: 100%;

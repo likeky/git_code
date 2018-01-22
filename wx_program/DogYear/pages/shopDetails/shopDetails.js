@@ -9,11 +9,11 @@ Page({
       tel: "020-000000"
     },
 
-    shopPhotos: [1, 2],
-    shopId:1,
+    shopPhotos: [
+    {imgUrl:"/resource/shop/1/1.png"},
+    { imgUrl: "/resource/shop/1/2.png" }
+    ]
 
-    imgUrls:""
-    
   },
 
 
@@ -22,11 +22,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    
+
     var changed = {}
 
-    var shopPhotos=this.data.shopPhotos;
-    var icon=0;
+    var shopPhotos = this.data.shopPhotos;
+    var icon = 0;
 
     /*
     for (var i = 0; i < shopPhotos.length; i++) {
@@ -35,10 +35,10 @@ Page({
     }
     */
 
-    var imgUrl=this.getImgUrl(1, 1);
+    var imgUrl = this.getImgUrl(1, 1);
     console.log("imgUrl=>" + imgUrl);
     this.data.imgUrls = imgUrl;
-    this.setData({imgUrls: imgUrl})
+    this.setData({ imgUrls: imgUrl })
   },
 
   /**
@@ -48,9 +48,8 @@ Page({
 
   },
 
-  getImgUrl:function(shopId,iconId)
-  {
-    return "/resource/shop/" + shopId + "/" + iconId+".png";
+  getImgUrl: function (shopId, iconId) {
+    return "/resource/shop/" + shopId + "/" + iconId + ".png";
   }
 
   /*

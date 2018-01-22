@@ -23,8 +23,8 @@
   </navigator>
   <navigator url="component-pages/wx-toast/wx-toast" class="widget">
     <text class="widget__name">门店照片</text>
-    <view>
-        <image src="{{imgUrls}}"/>
+    <view wx:for-items="{{shopPhotos}}">
+        <image src="{{item.imgUrl}}" />
     </view>
     <view class="widget__line"></view>
   </navigator>
