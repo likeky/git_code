@@ -3,14 +3,26 @@
     <text class="page__title">商家入驻</text>
     <text class="page__desc">标签</text>
   </view>
-  <view class="page__hd">
-     <view class='font14'  style=" display: flex;flex-direction: row;">
-                <view class="section__title">你输入的是：</view>
-                <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
-            </view>
+  <view class='panel-left'>
+     <view class='formItem_row'>
+            <view class="form_label">商家名称：</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入商家名称"/>         
+      </view>
+      <view class='formItem_row'>
+            <view class="form_label">商家电话：</view>
+            <input  bindinput="bindKeyInput" placeholder="商家手机号"/>         
+      </view>
+      <view class='formItem_row'>
+            <view class="form_label">商家QQ：</view>
+            <input  bindinput="bindKeyInput" placeholder="选填"/>         
+      </view>
+        <view class='formItem_row'>
+            <view class="form_label">商家分类：</view>
+            <input  bindinput="bindKeyInput" placeholder="美食餐饮"/>         
+      </view>
+     
   </view>
-<view class="container-row">
-    <text class="left">左边的文本</text>
-    <text class="right">右边的文本</text>
+<view >
+   
 </view>
 </view>
