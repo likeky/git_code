@@ -9,14 +9,17 @@
     width: 100px;
     height: 20px;
     margin-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .formItem_row
 {
   display:flex;
   flex-flow:row;
+}
+
+.label_all_row
+{
+    width:100%
 }
 
 .panel-left

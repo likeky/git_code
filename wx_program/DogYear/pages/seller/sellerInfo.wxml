@@ -16,9 +16,17 @@
             <view class="form_label">商家QQ：</view>
             <input  bindinput="bindKeyInput" placeholder="选填"/>         
       </view>
-        <view class='formItem_row'>
-            <view class="form_label">商家分类：</view>
-            <input  bindinput="bindKeyInput" placeholder="美食餐饮"/>         
+      <view class='formItem_row'>
+          <view class="form_label">商家分类：</view>
+          <picker bindchange="onShopType" value="{{index}}" range="{{typeList}}">
+              <view class="picker">
+                  当前选择：{{typeList[index]}}
+              </view>
+          </picker>
+      </view>      
+      <view>
+            <view class='label_all_row'>商家Logo(建议尺寸750*562)</view>
+                    
       </view>
      
   </view>
