@@ -226,3 +226,36 @@ checkbox, radio{
     padding-left: 0;
     padding-right: 0;
 }
+
+
+/**********ADD*/
+
+.widget{
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.widget_arrow{
+    position: absolute;   
+    top: 14px;
+    right: 22px;
+    width: 8px;
+    height: 16px;
+}
+.widget_line{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    right: 20px;
+    height: 1rpx;
+    background-color: #DFDFDF;
+}
+
+.box_grid {
+  display: flex;
+  flex-wrap: wrap;
+}

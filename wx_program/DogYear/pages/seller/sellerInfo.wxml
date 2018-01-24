@@ -17,17 +17,29 @@
             <input  bindinput="bindKeyInput" placeholder="选填"/>         
       </view>
       <view class='formItem_row'>
-          <view class="form_label">商家分类：</view>
+          <view class="form_label">商家分类：</view>          
           <picker bindchange="onShopType" value="{{index}}" range="{{typeList}}">
               <view class="picker">
                   当前选择：{{typeList[index]}}
               </view>
           </picker>
-      </view>      
+       
+      </view>
+
+
       <view>
             <view class='label_all_row'>商家Logo(建议尺寸750*562)</view>
-                    
+            <view bindtap="onGetLogo">
+              <image style="width:50px;height:50px;"  src="{{logoSrc}}"></image> 
+            </view>  
       </view>
+
+        <navigator url="" class="nav_panel">
+        <text class="widget_name">商家坐标：</text>
+        <image class="widget_arrow" src="/resource/arrow.png" background-size="cover" />
+        <view class="widget_line"></view>
+      </navigator>
+
      
   </view>
 <view >

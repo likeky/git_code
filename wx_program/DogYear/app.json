@@ -2,8 +2,11 @@
   "pages": [
     "pages/seller/sellerInfo",
     "pages/shopDetails/shopDetails",
+    
+    "pages/index/index", 
+    
     "pages/choosePhoto/ChoosePhoto",
-    "pages/index/index",
+    
     "pages/logs/logs"
   ],
   "window": {

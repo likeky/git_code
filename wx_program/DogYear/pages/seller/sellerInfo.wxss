@@ -26,3 +26,27 @@
 {
   padding-left: 15px;
 }
+
+.c_arrow{
+    top: 14px;
+    width: 18px;
+    height:32px;
+}
+
+.nav_panel
+{
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.nav_flex_center
+{
+  display: flex;
+
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  align-content: space-between;
+}
